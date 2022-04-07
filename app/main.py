@@ -28,8 +28,8 @@ def update():
 def api_all():
     return jsonify(
         {'id': 0,
-     'Current_generated': '{} Amperes'.format(update()),
-     'Current_consumed': '{} Amperes'.format(update()),
+     'Current_generated': '{} Amperes'.format(123),
+     'Current_consumed': '{} Amperes'.format(67),
      
      }
      )
