@@ -11,8 +11,8 @@ def respond():
     for n in range(11):
         data.append({"id":n,
                      'Raw_Sensor_Value': '{} '.format(random.randint(500, 550)),
-                      'Voltage (mV)': '{}'.format(random.randint(155, 389)/1000),            
-                       'Current (A)': '{} '.format(random.randint(-155, 389)/1000),})
+                      'Voltage_(mV)': '{}'.format(random.randint(155, 389)/1000),            
+                       'Current_(A)': '{} '.format(random.randint(-155, 389)/1000),})
     
     # Return the response in json format
     return jsonify(data)
