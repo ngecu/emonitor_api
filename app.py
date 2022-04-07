@@ -4,14 +4,15 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def respond():
-
+    data=[]
+    for n in range(10):
+        data.append({"id":n,
+                     'Raw_Sensor_Value': '{} '.format(random.randint(500, 550)),
+                      'Voltage (mV)': '{}'.format(random.randint(155, 389)/1000),            
+                       'Current (A)': '{} '.format(random.randint(-155, 389)/1000),})
+    
     # Return the response in json format
-    return jsonify(  {'id': 0,
-     'Raw_Sensor_Value': '{} '.format(70),
-     'Voltage (mV)': '{}'.format(123),            
-     'Current (A)': '{} '.format(67),
-     
-     })
+    return jsonify(data)
 
 
 
