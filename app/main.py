@@ -24,7 +24,7 @@ def update():
 
 
 # A route to return all of the available entries in our catalog.
-@app.route('/', methods=['GET'])
+@app.route('/sadsdsd', methods=['GET'])
 def api_all():
     return jsonify(
         {'id': 0,
@@ -34,4 +34,4 @@ def api_all():
      }
      )
 
-app.run()
+app.run(debug=True, port=33507)
