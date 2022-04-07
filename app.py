@@ -9,10 +9,9 @@ app = Flask(__name__)
 def respond():
     data=[]
     for n in range(11):
-        data.append({'id':n,
-                     'Raw_Sensor_Value':random.randint(500, 550),
-                      'Voltage_(mV)':random.randint(155, 389)/1000),            
-                       'Current_(A)':random.randint(-155, 389)/1000)
+        data.append({'id':n,'Raw_Sensor_Value':random.randint(500, 550),
+                      'Voltage_(mV)':random.randint(155, 389)/1000,            
+                       'Current_(A)':random.randint(-155, 389)/1000
                     })
     
     # Return the response in json format
