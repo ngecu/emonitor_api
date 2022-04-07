@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET'])
 def respond():
     data=[]
-    for n in range(10):
+    for n in range(11):
         data.append({"id":n,
                      'Raw_Sensor_Value': '{} '.format(random.randint(500, 550)),
                       'Voltage (mV)': '{}'.format(random.randint(155, 389)/1000),            
