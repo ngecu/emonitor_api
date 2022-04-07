@@ -7,8 +7,9 @@ def respond():
 
     # Return the response in json format
     return jsonify(  {'id': 0,
-     'Current_generated': '{} Amperes'.format(123),
-     'Current_consumed': '{} Amperes'.format(67),
+     'Raw_Sensor_Value': '{} '.format(70),
+     'Voltage (mV)': '{}'.format(123),            
+     'Current (A)': '{} '.format(67),
      
      })
 
